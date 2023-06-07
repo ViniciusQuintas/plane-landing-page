@@ -1,0 +1,530 @@
+/* Fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: #333333;
+    border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #707070;
+}
+::-webkit-scrollbar-track{
+    background: #CCCCCC;
+    border-radius: 0px;
+    box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+}
+
+header{
+    width: 100%;
+    background-color: #0E1833;
+    padding: 20px;
+    min-height: 657px;
+}
+
+.center{
+    display: flex;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* menu responsivo */
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.menu .logo a{text-decoration: none;}
+
+.menu .logo a h1{
+    font-family: 'Poppins', sans-serif;
+    color: #4BE0FF;
+    font-weight: bold;
+}
+
+.menu .menu-desktop{
+    display: flex;
+}
+
+.menu .menu-desktop li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.menu .menu-desktop li a{
+    font-family: 'Poppins', sans-serif;
+    color: #4BE0FF;
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.container .cont-text{
+    width: 50%;
+    text-align: center;
+}
+
+.container .cont-text h2{
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.container .cont-text p{
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    max-width: 500px;
+    margin-bottom: 25px;
+}
+
+.container .cont-text a.link1{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    background-color: #4BE0FF;
+    padding: 5px 35px;
+    margin-right: 5px;
+}
+
+.container .cont-text a.link2{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #4BE0FF;
+    padding: 5px 35px;
+}
+
+.container .cont-img{
+    text-align: right;
+    width: 50%;
+}
+
+.container .cont-img img{
+    width: 50%;
+    max-width: 100%;
+}
+
+section.products{
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 40px 20px;
+}
+
+section.products .prt-text{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
+
+section.products .prt-text h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #0E1833;
+    font-size: 40px;
+}
+
+section.products .prt-text p{
+    font-family: 'Open Sans', sans-serif;
+    color: #0E1833;
+}
+
+section.products .prt-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+section.products .prt-content .card{
+    width: 400px;
+    background-color: #0E1833;
+    padding: 40px;
+    margin-right: 10px;
+}
+
+section.products .prt-content .card img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+section.products .prt-content .card h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+section.products .prt-content .card p{
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+section.products .prt-content .card a{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    background-color: #4BE0FF;
+    padding: 5px 35px;
+    border-radius: 15px;
+}
+
+section.features{
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 40px 20px;
+}
+
+section.features .ft-text{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
+
+section.features .ft-text h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #0E1833;
+    font-size: 40px;
+}
+
+section.features .ft-text p{
+    font-family: 'Open Sans', sans-serif;
+    color: #0E1833;
+}
+
+section.features .slider{
+    width: 75%;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+section.features .slider .single-item .single-content img{
+    width: 100%;
+    max-width: 100%;
+}
+
+section.about{
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 40px 20px;
+}
+
+section.about .abt-text{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
+
+section.about .abt-text h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #0E1833;
+    font-size: 40px;
+}
+
+section.about .abt-card{
+    text-align: center;
+    padding:  80px 40px;
+    background-color: #0E1833;
+    border-radius: 15px;
+}
+
+section.about .abt-card h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+section.about .abt-card p{
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+section.about .abt-card a{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #4BE0FF;
+    padding: 5px 35px;
+    border-radius: 15px;
+}
+
+section.contact{
+    width: 100%;
+    background-color: #0E1833;
+    padding: 40px 20px;
+}
+
+section.contact .ct-text{
+    width: 1000%;
+    text-align: center;
+    margin: 30px 0;
+}
+
+section.contact .ct-text h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+section.contact .ct-inputs{
+    width: 100%;
+    text-align: center;
+}
+
+section.contact .ct-inputs .ipt{
+    margin-bottom: 25px;
+}
+
+section.contact .ct-inputs .ipt input{
+    width: 70%;
+    height: 40px;
+    padding: 0 30px;
+    outline: none;
+    border: none;
+    background-color: #F2F2F2;
+}
+
+section.contact .ct-inputs .ipt textarea{
+    width: 70%;
+    padding: 15px 30px;
+    resize: none;
+    outline: none;
+    border: none;
+    background-color: #F2F2F2;
+}
+
+section.contact .ct-inputs .ipt input[type="submit"]{
+    border-radius: 25px;
+    background-color: #4BE0FF;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+footer{
+    width: 100%;
+    background-color: #0E1833;
+    padding: 20px 20px;
+}
+
+footer .ft-text{
+    width: 100%;
+    text-align: center;
+}
+
+footer .ft-text h2{
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+/* menu responsivo  */
+
+.menu .abrir-menu{
+    margin-top: 5px;
+    display: none;
+}
+
+.menu .abrir-menu i{
+    color: #FFFFFF;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+nav.mobile{
+    width: 100%;   
+    text-align: center;
+    transition: 1s;
+    display: none;
+}
+
+nav.mobile .menu-mobile{
+    display: none;
+}
+
+nav.mobile .menu-mobile li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+nav.mobile .menu-mobile li a{
+    font-family: 'Poppins', sans-serif;
+    color: #4BE0FF;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px){
+    .menu .menu-desktop{
+        display: none;
+    }
+
+    .menu .abrir-menu{
+        display: block;
+    }
+
+    nav.mobile{
+        display: block;
+    }
+}
+
+/* container responsivo */
+
+@media screen and (max-width: 1100px){
+    .container{
+        margin-top: 90px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .container{
+        margin-top: 110px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .container .cont-text a.link1{
+        display: block;
+        margin: 15px auto;
+        width: 200px;
+    }
+
+    .container .cont-text a.link2{
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .container{
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+        padding-bottom: 40px;
+    }
+    
+    .container .cont-text{
+        width: 100%;
+    }
+    
+    .container .cont-text p{
+        max-width: 100%;
+    }
+    
+    .container .cont-img{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    .container .cont-img img{
+        width: 40%;
+    }
+}
+
+/* section products responsivo */
+
+@media screen and (max-width: 911px) {
+    section.products .prt-content .card{
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 330px){
+    section.products .prt-content .card{
+        width: 100%;
+        padding: 20px;
+    }
+    
+    section.products .prt-content .card a{
+        padding: 5px 20px;
+    }
+}
+
+/* section features responsivo */
+
+@media screen and (max-width: 800px){
+    section.features .slider{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* section about responsivo  */
+
+@media screen and (max-width: 380px){
+    section.about .abt-card{    
+        padding:  60px 10px;
+    }
+
+    section.about .abt-card h2{
+        font-size: 25px;
+    }
+    
+    section.about .abt-card p{
+        font-size: 14px;
+    }
+}
+
+/* section contact responsivo */
+
+@media screen and (max-width: 640px) {
+    section.contact .ct-inputs .ipt input{
+        width: 100%;
+    }
+    
+    section.contact .ct-inputs .ipt textarea{
+        width: 100%;
+    }
+    
+}
